@@ -1,0 +1,3 @@
+安装带有ssl证书的nginx， 所有ssl证书均来自腾讯云，免费申请。
+执行完成后，需要修改域名解析地址。
+博客域名： https://blog.wisepkg.com 

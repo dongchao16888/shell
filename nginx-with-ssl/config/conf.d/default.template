@@ -1,0 +1,12 @@
+server {
+	listen 80;
+	server_name blog.wisepkg.com;
+	
+	access_log /var/log/nginx/blog.wisepkg.com/access.log;
+	error_log /var/log/nginx/blog.wisepkg.com/error.log;
+	
+	location / {
+		root /home/ec2-user/blog.wisepkg.com/public;
+		index index.html;
+	}
+}

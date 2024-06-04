@@ -1,0 +1,13 @@
+安装部署说明
+1).执行install.sh脚本，安装 stunnel+squid 代理，windows客户端和服务端共用pem证书；
+
+2). win客户端配置中需添加：
+
+[squid-proxy]
+client = yes 
+accept = 127.0.0.1:9090
+verifyChain = no
+connect =×.×.×.×:3129
+CAfile = D:\Program Files\stunnel\config\stunnel.pem
+
+3). vps放通3129端口的防火墙规则
